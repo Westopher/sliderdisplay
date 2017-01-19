@@ -10,6 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet var slider: UISlider!
+    
+    @IBOutlet var label: UILabel!
+    
+    @IBAction func sliderChanged(_ sender: Any) {
+        
+        label.text = (String(slider.value))
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
